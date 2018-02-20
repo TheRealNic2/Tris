@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tris_scheme"
+    tools:context="com.therealnic.tris.GameActivity">
+
+
+    <ImageButton
+        android:id="@+id/ibtn9"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="79dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="62dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibtn8"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn6"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn8"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="89dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="14dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn9"
+        app:layout_constraintStart_toEndOf="@+id/ibtn7"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn5"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn7"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="79dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="55dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn4"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn6"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="79dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="62dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibtn5"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn3"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn4"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="76dp"
+        android:layout_height="127dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="55dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn7"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn1"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn3"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="76dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="62dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibtn2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn2"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="92dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="61dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn5"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn3"
+        app:layout_constraintStart_toEndOf="@+id/ibtn1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn1"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="78dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="63dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn4"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/ibtn5"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="92dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="11dp"
+        android:alpha="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn8"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn6"
+        app:layout_constraintStart_toEndOf="@+id/ibtn4"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn2"
+        app:srcCompat="@android:color/transparent" />
+
+</android.support.constraint.ConstraintLayout>
