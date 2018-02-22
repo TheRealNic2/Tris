@@ -18,13 +18,16 @@ public class GameActivity extends AppCompatActivity {
     ImageButton ibtn7;
     ImageButton ibtn8;
     ImageButton ibtn9;
+    int turno=1;
+    int[] android = new int[5];
+    int[] apple = new int[5];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        ImageButton ibtn1 = (ImageButton) findViewById(R.id.ibtn1);
+        final ImageButton ibtn1 = (ImageButton) findViewById(R.id.ibtn1);
         ImageButton ibtn2 = (ImageButton) findViewById(R.id.ibtn2);
         ImageButton ibtn3 = (ImageButton) findViewById(R.id.ibtn3);
         ImageButton ibtn4 = (ImageButton) findViewById(R.id.ibtn4);
@@ -34,10 +37,15 @@ public class GameActivity extends AppCompatActivity {
         ImageButton ibtn8 = (ImageButton) findViewById(R.id.ibtn8);
         ImageButton ibtn9 = (ImageButton) findViewById(R.id.ibtn9);
 
+
+
         ibtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i("Tris","1.Premuto!!");
+                if(turno%2==1) {
+                    ibtn1.setAlpha((float) 1);
+                    ibtn1.setBackground(getDrawable(R.drawable.android));
+                }
             }
         });
 
